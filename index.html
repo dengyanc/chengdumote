@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>成都模特</title>
+	    <script src="js/jquery-3.1.1.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+	    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/admin.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/chengdu01.css"/>
+	    
+	    <script>
+	    	function ScrollImgLeft(){
+			var speed=30
+			var scroll_begin = document.getElementById("scroll_begin");
+			var scroll_end = document.getElementById("scroll_end");
+			var scroll_div = document.getElementById("scroll_div");
+			
+			scroll_end.innerHTML=scroll_begin.innerHTML
+			
+			function Marquee(){
+			
+			if(scroll_end.offsetWidth-scroll_div.scrollLeft<=0)
+			
+			scroll_div.scrollLeft-=scroll_begin.offsetWidth
+			
+			else
+			scroll_div.scrollLeft++
+			
+			}
+			
+			var MyMar=setInterval(Marquee,speed)
+			
+			scroll_div.onmouseover=function() {clearInterval(MyMar)}
+			
+			scroll_div.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+			
+			}
+	
+	    </script>
+	</head>
+	<body>
+		<!--导航-->
+		<div id="wrap">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynav">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand logo"><img src="img/logo.png" class="img-responsive"/></a>
+					<a href="#" class="navbar-brand logoii"><img src="img/logoii.png" class="img-responsive"/></a>
+				</div>
+				
+				<div class="navbar-collapse collapse" id="mynav">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">成都模特</a></li>
+						<li><a href="model.html">模特库</a></li>
+						<li><a href="cooperation.html">企业合作</a></li>
+						<li><a href="rednet.html">网红直播</a></li>
+						<li><a href="plan.html">招募计划</a></li>
+						<li><a href="cheat.html">行业防骗</a></li>
+						<li><a href="aboutme.html">关于我们</a></li>
+						<li><a href="fashion.html">时尚生活</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="plan.html">模特免费推荐>></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		</div>
+		
+		<!--img滚动-->
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		  </ol>
+		
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+		    <div class="item active">
+		      <img src="img/01.jpg" alt="...">
+		      <div class="carousel-caption">
+		        
+		      </div>
+		    </div>
+		    <div class="item">
+		      <img src="img/02.png" alt="...">
+		      <div class="carousel-caption">
+		        
+		      </div>
+		    </div>
+		    <div class="item">
+		      <img src="img/03.jpg" alt="...">
+		      <div class="carousel-caption">
+		        
+		      </div>
+		    </div>
+		  </div>
+		
+		  <!-- Controls -->
+		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
+	
+		
+		<div class="container">
+			<div style="text-align:center">
+				<div class="sqBorder">
+				<!--#####滚动区域#####-->
+				<div id="scroll_div" class="scroll_div">
+				<div id="scroll_begin">
+						<ul>
+						<li><a href="#"><span>2017/08/03</span>话剧演员招募，4男4女，排练时间一个月，预计6月底7月初演出，德阳5场，周边5场,排练演出包食宿。</a></li>
+							
+							<li><a href="#"><span>2017/08/03</span>话剧演员招募，4男4女，排练时间一个月，预计6月底7月初演出，德阳5场，周边5场,排练演出包食宿。</a></li>
+							
+							<li><a href="#"><span>2017/08/03</span>话剧演员招募，4男4女，排练时间一个月，预计6月底7月初演出，德阳5场，周边5场,排练演出包食宿。</a></li>
+							
+							<li><a href="#"><span>2017/08/03</span>话剧演员招募，4男4女，排练时间一个月，预计6月底7月初演出，德阳5场，周边5场,排练演出包食宿。</a></li>
+						
+						</ul>
+				
+				</div>
+				<div id="scroll_end"></div>
+				</div>
+				<!--#####滚动区域#####-->
+				</div>
+				<script type="text/javascript">ScrollImgLeft();</script>
+			</div>
+		</div>
+		
+		
+		<!--企业用户-->
+		<div class="container-fluid" id="g_lg">
+			<!--企业用户-->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="row tu">
+							<div class="col-xs-12 col-sm-12 col-md-12">
+								<div class="g_user">
+									<h1><a href="#">企业用户</a></h1>
+									<p><a href="#">我市企业，商家，策划公司，摄影爱好者</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="con-md-6">
+								<p class="p">成都模特王试哈结合客户开户很看好你看军火库很快就会好尴尬韩国<br>红歌会尽快尽快哈尽快很快就会加快的高发的广泛地规范是电饭锅大锅饭采光好发v就好屯蚁附一套房回复</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<img  src="img/code.jpg" class="img-responsive g_lg_img"/>
+								<p class="text-center">立即联系扶着人</p>
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<img src="img/code.jpg" class="img-responsive g_lg_img"/>
+								<p class="text-center">立即联系扶着人</p>
+							</div>
+						</div>
+						<div class="row" id="ccc">
+							<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3"></div>
+							<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+								<a href="#" class="btn btn-default" id="a1"><<企业资源合作</a>
+							</div>
+							<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+								<a href="#" class="btn btn-default" id="a2">企业资源合作>></a>
+							</div>
+							<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3"></div>
+						</div>
+					
+					</div> 
+					<div class="col-md-6">
+						<div class="g_user2">
+							<h1><a href="#">我是模特</a></h1>
+							<p><a href="#">策划公司，摄影爱好者</a></p>
+						</div>
+						<div class="media">
+							<div class="media-left">
+								<a href="#"><img src="img/nvshen2-400x400.jpg"/></a>
+							</div>
+							<div class="media-body">
+								<h4>游戏模特拍摄招募</h4>
+								<p id="p">类别：<span>工作招募</span></p>
+								<p id="p">发布：2016/07/23</p>
+							</div>
+						</div>
+						<div class="media">
+							<div class="media-left">
+								<a href="#"><img src="img/nvshen2-400x400.jpg"/></a>
+							</div>
+							<div class="media-body">
+								<h4>游戏模特拍摄招募</h4>
+								<p id="p">类别：<span>工作招募</span></p>
+								<p id="p">发布：2016/07/23</p>
+							</div>
+						</div>
+						<div class="media">
+							<div class="media-left">
+								<a href="#"><img src="img/nvshen2-400x400.jpg"/></a>
+							</div>
+							<div class="media-body">
+								<h4>游戏模特拍摄招募</h4>
+								<p id="p">类别：<span>工作招募</span></p>
+								<p id="p">发布：2016/07/23</p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+				
+				<!--imgtwo-->
+			<div class="container">
+				<div class="row" id="imgtwo">
+					<div class="col-xs-12 col-md-6">
+						<a href="#"><img src="img/banner01.jpg" class="img-responsive"/></a>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<a href="#"><img src="img/banner02.jpg" class="img-responsive"/></a>
+					</div>
+				</div>
+			</div>	
+					
+				<!--新悦红人排行榜-->
+			<div class="container">
+				<div class="row">
+					<div class="page-header">
+						<div class="pull-left">
+							<h4>新悦红人排行榜</h4>
+						</div>
+						<div class="pull-right">
+							<a href="#"><span>查看更多>></span></a>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/Katherine-600x600.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot text-center">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/Cher-600x600.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot text-center">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/Cher-600x600.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot text-center">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/Katherine-600x600.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot text-center">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/Cher-600x600.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot text-center">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/1-29-400x400.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot text-center">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/Katherine-600x600.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot text-center">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/1-29-400x400.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot text-center">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/1-30-400x400.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot text-center">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/Cher-600x600.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot text-center">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/7-24-400x400.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot text-center">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/Cher-600x600.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot text-center">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/Cher-600x600.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot text-center">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/1-29-400x400.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot text-center">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/1-29-400x400.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot text-center">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/Cher-600x600.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot text-center">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/1-29-400x400.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot text-center">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/Cher-600x600.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot text-center">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+				<!---->
+			<div class="container">
+				<div class="col-md-6 col-md-offset-3 sele">
+					<a class="btn btn-pink btn-lg btn-block a" href="#"><i><</i>&nbsp;查看红人榜&nbsp;<i>></i></a>
+				</div>
+			</div>
+			
+			<!--外界超模-->
+			<div class="container">
+				<div class="row">
+					<div class="page-header">
+						<div class="pull-left">
+							<h4>外界超模</h4>
+						</div>
+						<div class="pull-right">
+							<a href="#"><span>查看更多>></span></a>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/1-29-400x400.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/7-24-400x400.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/1-29-400x400.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/1-30-400x400.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/Cher-600x600.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/Cher-600x600.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/1-29-400x400.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/1488984399-9711-20151228201442-51130-600x600.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/Cher-600x600.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/Katherine-600x600.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/1-29-400x400.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/Cher-600x600.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					
+				</div>
+			</div>	
+				
+			<!---->
+			<div class="container">
+				<div class="col-md-6 col-md-offset-3 sele" id="sele">
+					<a class="btn btn-pink btn-lg btn-block a" href="#"><i><</i>&nbsp;查看超模榜&nbsp;<i>></i></a>
+				</div>
+			</div>	
+				<!--新悦红人排行榜-->
+			<div class="container" id="pai">
+				<div class="row">
+					<div class="page-header">
+						<div class="pull-left">
+							<h4>新悦红人排行榜</h4>
+						</div>
+						<div class="pull-right">
+							<a href="#"><span>查看更多>></span></a>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/1-29-400x400.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/7-24-400x400.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/1-29-400x400.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/1-30-400x400.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/Cher-600x600.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/Cher-600x600.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/1-29-400x400.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/1488984399-9711-20151228201442-51130-600x600.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/Cher-600x600.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/Katherine-600x600.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/1-29-400x400.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="top">
+							<a href="#"><img src="img/Cher-600x600.jpg" class="img-responsive"/></a>
+						</div>
+						<div class="bot">
+							<span>模特ID/</span><span>10709</span><br><span>热度值/</span><span>470°C/</span>
+						</div>
+					</div>
+					
+				</div>
+			</div>	
+			<!---->	
+			<div class="container">
+				<div class="col-md-6 col-md-offset-3 sele" id="sele">
+					<a class="btn btn-pink btn-lg btn-block a" href="#"><i><</i>&nbsp;查看性感车模&nbsp;<i>></i></a>
+				</div>
+			</div>	
+			
+			</div>
+		</div>
+		
+		<!--成都模特网合作项目介绍-->
+		<div class="fang text-center">
+			<div class="container">
+				<h3>成都模特网合作项目介绍</h3>
+				 <div class="row">
+				 	<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2"></div>
+				 	<div class="col-xs-12 col-sm-8 col-md-8 col-lg-">
+				 		<span class="label label-default">事件营销</span>
+				 		<span class="label label-default">视觉发的营销</span>
+				 		<span class="label label-default">事件尽快营销</span>
+				 		<span class="label label-default">事件营销</span>
+				 		<span class="label label-default">事件营销回家</span>
+				 		<span class="label label-default">事件营销</span>
+				 		<span class="label label-default">事件营销你好</span>
+				 		<span class="label label-default">事件营回家销</span>
+				 		<span class="label label-default">事回家营销</span>
+				 		<span class="label label-default">事件营销</span>
+				 		<span class="label label-default">事好件发的销</span>
+				 		<span class="label label-default">事件营销</span>
+				 		<span class="label label-default">事件营销回家</span>
+				 		<span class="label label-default">事件得分营销</span>
+				 		<span class="label label-default">营销</span>
+				 		<span class="label label-default">事件营销</span>
+				 		<span class="label label-default">事件营销</span>
+				 		<span class="label label-default">事件营销</span>
+				 	</div>
+				 	<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2"></div>
+				 	
+				 </div>
+				 <div class="row text-center" id="erwei">
+				 	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3"></div>
+				 	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+				 		<img src="img/code.jpg" class="img-responsive"/>
+				 		<p>马上联系负责人</p>
+				 	</div>
+				 	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+				 		<img src="img/code.jpg" class="img-responsive"/>
+				 		<p>马上联系负责人</p>
+				 	</div>
+				 	<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3"></div>
+				 </div>
+			</div>
+			
+			<div class="btn-group" id="last_btn">
+				<a href="#" class="btn btn-default" id="a3"><i><<企业资源合作</i></a>
+				<a href="#" class="btn btn-default" id="a4"><i>企业资源合作>></i></a>
+			</div>
+			
+			<div class="row texts">
+				<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2"></div>
+				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+					<p class="text-center">1．商业企业全案策划营销：网红模特直播，事件营销，视觉营销，商业品牌全案策划，品牌代言。</p>
+				<p class="text-center">2．影视／选秀／招募：节目嘉宾推介，选秀活动组织，影视剧演员招募，空姐招聘。</p>
+				<p class="text-center">3．礼仪会展活动：各类车展、新闻发布会、产品推介会展示会、招商会、商务演艺公关活动和各种文化交流活动等。</p>
+				<p class="text-center">4．大陆港台艺人明星代理：一线明星代理，品牌代言，广告植入。
+成都模特网提供专业的品牌策划包装营销方案，集策划实施运营于一身，借助互联网平台的的优势实力为商业企业提供全方位的商业服务。
+</p>
+				</div>
+				<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2"></div>
+			</div>
+		</div>
+		
+		<!--策划-->
+		<div class="cehua">
+			<div class="container">
+				<div class="col-xs-12 col-sm-6 con-md-3 col-lg-3">
+					<img src="img/aserver01.jpg" class="img-responsive"/>
+				</div>
+				<div class="col-xs-12 col-sm-6 con-md-3 col-lg-3">
+					<img src="img/aserver03.jpg" class="img-responsive"/>
+				</div>
+				<div class="col-xs-12 col-sm-6 con-md-3 col-lg-3">
+					<img src="img/aserver01.jpg" class="img-responsive"/>
+				</div>
+				<div class="col-xs-12 col-sm-6 con-md-3 col-lg-3">
+					<img src="img/aserver03.jpg" class="img-responsive"/>
+				</div>
+			</div>
+		</div>
+		
+		<!--底部-->
+		<div class="footer">
+			<p class="text-center">COPYRIGHT 成都模特 ALL RIGHTS RESERVED.</p>
+			<p class="text-center">页面：<a href="#">站点地图</a><a href="#">站点地图</a><a href="#">站点地图</a><a href="#">站点地图</a></p>
+			<p class="text-center">标签：<a href="#">模特公司</a><a href="#">成都模特兼职</a><a href="#">成都模特兼职</a><a href="#">成都模特兼职</a><a href="#">成都模特兼职</a><a href="#">成都模特兼职</a></p>
+			<p class="text-center">版权所有，抄袭必究</p>
+			<p class="text-center">設計&開發 BY <span>JACK</span>  ／ BLOG</p>
+		</div>
+		
+		
+		
+	</body>
+	
+	<script>
+	<!--导航滑动变色-->
+	$(function(){
+		$(window).bind("scroll", function(){ 
+		 	var top = $(this).scrollTop(); // 当前窗口的滚动距离
+		 
+		 	if(top>50){
+		 		$("#wrap").addClass("scrolled");
+		 	}else{
+		 		$("#wrap").removeClass("scrolled");
+		 	}
+		 	
+		 	
+		 });
+	})
+	</script>
+</html>
